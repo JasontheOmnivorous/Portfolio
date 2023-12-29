@@ -47,7 +47,7 @@ const Projects = ({ id }: Props) => {
     {
       id: 6,
       name: "E-commerce API",
-      apiDocs: "",
+      apiDocs: "https://min-thant.gitbook.io/ecommerce-api-documentation/",
       description:
         "The backbone of a seamless shopping experience. Built with Node.js, Express, and MongoDB, this API perfectly complements the frontend. With a focus on performance and reliability, it ensures smooth interactions, making the E-commerce frontend come to life.",
       link: "https://github.com/JasontheOmnivorous/Ecommerce-API",
