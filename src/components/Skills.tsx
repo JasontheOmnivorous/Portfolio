@@ -6,6 +6,7 @@ import NextJS from "@/assets/nextjs.svg";
 import PostgreSQL from "@/assets/postgresql.svg";
 import Prisma from "@/assets/prisma.svg";
 import ReactJS from "@/assets/react.svg";
+import TailwindCSS from "@/assets/tailwindcss.svg";
 import TypeScript from "@/assets/typescript.svg";
 import { TechStack } from "@/types/types";
 import Image from "next/image";
@@ -28,38 +29,43 @@ const Skills = ({ id }: Props) => {
     },
     {
       id: 3,
+      icon: MaterialUI,
+      label: "Material UI",
+    },
+    {
+      id: 4,
+      icon: TailwindCSS,
+      label: "TailwindCSS",
+    },
+    {
+      id: 5,
       icon: ReactJS,
       label: "React",
     },
     {
-      id: 4,
+      id: 6,
       icon: ExpressJS,
       label: "Express",
     },
     {
-      id: 5,
+      id: 7,
       icon: MongoDB,
       label: "MongoDB",
     },
     {
-      id: 6,
+      id: 8,
       icon: NextJS,
       label: "Next.js",
     },
     {
-      id: 7,
+      id: 9,
       icon: Prisma,
       label: "Prisma",
     },
     {
-      id: 8,
+      id: 10,
       icon: PostgreSQL,
       label: "PostgreSQL",
-    },
-    {
-      id: 9,
-      icon: MaterialUI,
-      label: "Material UI",
     },
   ];
 
