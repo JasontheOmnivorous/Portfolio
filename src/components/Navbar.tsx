@@ -5,7 +5,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <div className="sticky w-screen top-0 bg-opacity-80 bg-white">
+    <div className="fixed w-full top-0 left-0 z-10 bg-opacity-80 bg-white">
       <div className="text-2xl font-bold text-orange-500 h-[12dvh] lg:h-[16dvh] shadow-lg flex justify-start items-center">
         <button
           onClick={() => setToggle(!toggle)}
