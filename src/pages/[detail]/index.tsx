@@ -1,3 +1,5 @@
+import EcommerceFrontend from "@/assets/ecommerce-frontend.jpg";
+import MiniEcommerce from "@/assets/mini-commerce.jpg";
 import NodeFarm from "@/assets/node-farm.jpg";
 import { ProjectDetail } from "@/types/types";
 import Image from "next/image";
@@ -67,6 +69,7 @@ const ProjectDetailPage = () => {
     {
       id: 5,
       name: "E-commerce Frontend",
+      image: EcommerceFrontend,
       description:
         "The E-commerce Frontend project holds a special place in my coding journey, embodying the essence of collaboration and skill refinement. In a joint effort with a friend, this venture became a canvas for charging my comunication and colaboration skills, revealing the beauty of teamwork in software development. As the name suggests, the E-commerce Frontend project serves as a showcase of my expertise in crafting visually appealing and intuitive user interfaces with React. One of the project's highlights is the emphasis on smooth state management. Leveraging the power of React, I implemented robust state management practices, ensuring a responsive and dynamic user experience.",
       link: "https://github.com/JasontheOmnivorous/Ecommerce-Frontend",
@@ -81,15 +84,17 @@ const ProjectDetailPage = () => {
     {
       id: 6,
       name: "Mini E-commerce",
+      image: MiniEcommerce,
       description:
-        "The E-commerce Frontend project holds a special place in my coding journey, embodying the essence of collaboration and skill refinement. In a joint effort with a friend, this venture became a canvas for charging my comunication and colaboration skills, revealing the beauty of teamwork in software development. As the name suggests, the E-commerce Frontend project serves as a showcase of my expertise in crafting visually appealing and intuitive user interfaces with React. One of the project's highlights is the emphasis on smooth state management. Leveraging the power of React, I implemented robust state management practices, ensuring a responsive and dynamic user experience.",
+        "Built to master Redux Toolkit for state management and implement a robust search filter feature. This project showcases expertise in Next.js, Redux Toolkit, PostgreSQL, and Prisma. The frontend ensures seamless state handling, while the backend leverages PostgreSQL and Prisma for scalable data storage. ",
       link: "https://github.com/JasontheOmnivorous/mini-ecommerce",
       technologiesUsed: [
         "TypeScript",
         "MUI",
-        "React",
+        "Next.js",
         "Redux Toolkit",
-        "React-Router",
+        "Prisma",
+        "PostgreSQL",
       ],
     },
   ];
@@ -128,7 +133,7 @@ const ProjectDetailPage = () => {
       )}
       {selectedProject?.image && (
         <Image
-          width={200}
+          width={250}
           height={200}
           src={selectedProject.image}
           alt="app-image"
