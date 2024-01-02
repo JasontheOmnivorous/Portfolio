@@ -11,17 +11,17 @@ const Contact = ({ id }: Props) => {
         <h1 className="text-2xl font-bold text-orange-500 m-5">Reach me out</h1>
         <div className="flex justify-center items-center">
           <a href="https://github.com/JasontheOmnivorous/" target="_blank">
-            <p className="text-5xl m-6 animate-pulse">
+            <p className="text-5xl m-3 animate-pulse">
               <FaGithub />
             </p>
           </a>
           <a href="https://www.facebook.com/min.thant.jason/" target="_blank">
-            <p className="text-5xl m-6 animate-pulse">
+            <p className="text-5xl m-3 animate-pulse">
               <FaFacebook />
             </p>
           </a>
           <a href="" target="_blank">
-            <p className="text-5xl m-6 animate-pulse">
+            <p className="text-5xl m-3 animate-pulse">
               <FaLinkedin />
             </p>
           </a>
@@ -29,14 +29,12 @@ const Contact = ({ id }: Props) => {
             href="https://www.instagram.com/jason_the_omnivorous"
             target="_blank"
           >
-            <p className="text-5xl m-6 animate-pulse">
+            <p className="text-5xl m-3 animate-pulse">
               <FaInstagram />
             </p>
           </a>
         </div>
-        <h1 className="text-orange-500 font-bold m-5">
-          marsjason485@gmail.com
-        </h1>
+        <h1 className="font-bold m-5 animate-pulse">marsjason485@gmail.com</h1>
       </div>
     </div>
   );

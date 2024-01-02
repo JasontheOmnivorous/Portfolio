@@ -8,7 +8,13 @@ interface Props {
 const About = ({ id }: Props) => {
   return (
     <div id={id} className="flex flex-col items-center justify-center mt-24">
-      <Image className="w-60 h-60 morphPic" src={Eren} alt="my-pic" />
+      <Image
+        width={200}
+        height={150}
+        className="morphPic"
+        src={Eren}
+        alt="my-pic"
+      />
       <div className="m-5">
         <p>
           Hi, I&apos;m Min Thant Khaing. A dedicated

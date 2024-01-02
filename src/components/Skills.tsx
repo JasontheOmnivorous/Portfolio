@@ -80,7 +80,7 @@ const Skills = ({ id }: Props) => {
             className="border border-gray-300 shadow-lg rounded-xl w-[32dvw] h-[16dvh] flex flex-col justify-center items-center m-2 p-2 hover:border-orange-300 lg:w-[16dvw]"
             key={item.id}
           >
-            <Image className="w-14 h-14" src={item.icon} alt={item.label} />
+            <Image width={50} height={50} src={item.icon} alt={item.label} />
             <h1 className="font-bold">{item.label}</h1>
           </div>
         ))}
