@@ -1,6 +1,5 @@
 import { Project } from "@/types/types";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
 
 interface Props {
   id: string;
@@ -63,14 +62,9 @@ const Projects = ({ id }: Props) => {
             <div className="w-[60dvw] h-auto border border-gray-300 rounded-xl m-2 shadow-lg p-2 flex flex-col items-center justify-start hover:border-orange-300">
               <h1 className="font-bold">{item.name}</h1>
               <p className="m-2">{item.description}</p>
-              <a
-                className="m-2 text-3xl"
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub />
-              </a>
+              <h1 className="font-bold text-purple-500 cursor-pointer">
+                Find out more details →
+              </h1>
             </div>
           </Link>
         ))}

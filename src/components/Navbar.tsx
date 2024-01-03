@@ -16,10 +16,18 @@ const Navbar = () => {
           {toggle ? "×" : "☰"}
         </button>
         <div className="hidden md:flex md:justify-around md:items-center lg:flex lg:justify-around lg:items-center w-full">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a className="hover:text-3xl hover:text-orange-300" href="#about">
+            About
+          </a>
+          <a className="hover:text-3xl hover:text-orange-300" href="#skills">
+            Skills
+          </a>
+          <a className="hover:text-3xl hover:text-orange-300" href="#projects">
+            Projects
+          </a>
+          <a className="hover:text-3xl hover:text-orange-300" href="#contact">
+            Contact
+          </a>
         </div>
       </div>
       <MenuBar toggle={toggle} />
