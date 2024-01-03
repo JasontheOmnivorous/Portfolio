@@ -1,4 +1,5 @@
 import ExpressJS from "@/assets/expressjs.svg";
+import Git from "@/assets/git.svg";
 import JavaScript from "@/assets/javascript.gif";
 import MaterialUI from "@/assets/material-ui.svg";
 import MongoDB from "@/assets/mongodb.svg";
@@ -6,6 +7,7 @@ import NextJS from "@/assets/nextjs.svg";
 import PostgreSQL from "@/assets/postgresql.svg";
 import Prisma from "@/assets/prisma.svg";
 import ReactJS from "@/assets/react.svg";
+import RTK from "@/assets/redux-toolkit-redux.svg";
 import TailwindCSS from "@/assets/tailwindcss.svg";
 import TypeScript from "@/assets/typescript.svg";
 import { TechStack } from "@/types/types";
@@ -44,33 +46,43 @@ const Skills = ({ id }: Props) => {
     },
     {
       id: 6,
+      icon: RTK,
+      label: "Redux Toolkit",
+    },
+    {
+      id: 7,
       icon: ExpressJS,
       label: "Express",
     },
     {
-      id: 7,
+      id: 8,
       icon: MongoDB,
       label: "MongoDB",
     },
     {
-      id: 8,
+      id: 9,
       icon: NextJS,
       label: "Next.js",
     },
     {
-      id: 9,
+      id: 10,
       icon: Prisma,
       label: "Prisma",
     },
     {
-      id: 10,
+      id: 11,
       icon: PostgreSQL,
       label: "PostgreSQL",
+    },
+    {
+      id: 12,
+      icon: Git,
+      label: "Git",
     },
   ];
 
   return (
-    <div id={id} className="flex flex-col justify-center items-center">
+    <div id={id} className="flex flex-col justify-center items-center mt-10">
       <h1 className="text-orange-500 font-bold m-5">
         Technologies I&apos;ve worked on:
       </h1>
@@ -81,7 +93,7 @@ const Skills = ({ id }: Props) => {
             key={item.id}
           >
             <Image width={50} height={50} src={item.icon} alt={item.label} />
-            <h1 className="font-bold">{item.label}</h1>
+            <h1 className="font-bold text-xs m-1">{item.label}</h1>
           </div>
         ))}
       </div>

@@ -9,9 +9,7 @@ const About = ({ id }: Props) => {
   return (
     <div id={id} className="flex flex-col items-center justify-center mt-24">
       <Image
-        width={200}
-        height={150}
-        className="morphPic"
+        className="morphPic lg:w-40 lg:h-auto w-[38vw] h-auto"
         src={Eren}
         alt="my-pic"
       />

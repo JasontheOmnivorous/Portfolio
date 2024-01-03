@@ -133,8 +133,7 @@ const ProjectDetailPage = () => {
       )}
       {selectedProject?.image && (
         <Image
-          width={250}
-          height={200}
+          className="lg:w-[90%] lg:h-auto w-60 h-auto mb-5 mt-5 rounded-xl shadow-xl"
           src={selectedProject.image}
           alt="app-image"
         />
