@@ -11,10 +11,16 @@ export interface TechStack {
   label: string;
 }
 
+interface ApiTestImage {
+  id: number;
+  image: any;
+}
+
 export interface ProjectDetail {
   id: number;
   name: string;
   apiDocs?: string;
+  apiTestImg?: ApiTestImage[];
   image?: any;
   description: string;
   link: string;
