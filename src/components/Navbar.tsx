@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full top-0 left-0 z-10 bg-opacity-80 bg-white">
-      <div className="text-2xl font-bold text-orange-500 h-[12dvh] lg:h-[14dvh] 2xl:h-[12vh] xl:h-[12dvh] shadow-lg flex justify-start items-center">
+      <div className="text-2xl font-bold text-orange-500 h-[12dvh] lg:h-[18dvh] 2xl:h-[12vh] xl:h-[12dvh] shadow-lg flex justify-start items-center">
         <button
           onClick={() => setToggle(!toggle)}
           className={`lg:hidden md:hidden text-3xl ml-5 transition-transform duration-700 ${

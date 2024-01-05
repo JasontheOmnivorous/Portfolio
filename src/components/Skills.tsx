@@ -1,14 +1,14 @@
 import ExpressJS from "@/assets/techIcons/expressjs.svg";
 import Git from "@/assets/techIcons/git.svg";
-import JavaScript from "@/assets/techIcons/javascript.gif";
+import JavaScript from "@/assets/techIcons/javascript.svg";
 import MaterialUI from "@/assets/techIcons/material-ui.svg";
 import MongoDB from "@/assets/techIcons/mongodb.svg";
 import NextJS from "@/assets/techIcons/nextjs.svg";
 import NodeJS from "@/assets/techIcons/nodejs.svg";
 import PostgreSQL from "@/assets/techIcons/postgresql.svg";
 import Prisma from "@/assets/techIcons/prisma.svg";
-import ReactJS from "@/assets/techIcons/react.svg";
-import RTK from "@/assets/techIcons/redux-toolkit-redux.svg";
+import ReactJS from "@/assets/techIcons/react-react-native.svg";
+import RTK from "@/assets/techIcons/redux.svg";
 import TailwindCSS from "@/assets/techIcons/tailwindcss.svg";
 import TypeScript from "@/assets/techIcons/typescript.svg";
 import { TechStack } from "@/types/types";
@@ -56,32 +56,32 @@ const Skills = ({ id }: Props) => {
       label: "Node.js",
     },
     {
-      id: 7,
+      id: 8,
       icon: ExpressJS,
       label: "Express",
     },
     {
-      id: 8,
+      id: 9,
       icon: MongoDB,
       label: "MongoDB",
     },
     {
-      id: 9,
+      id: 10,
       icon: NextJS,
       label: "Next.js",
     },
     {
-      id: 10,
+      id: 11,
       icon: Prisma,
       label: "Prisma",
     },
     {
-      id: 11,
+      id: 12,
       icon: PostgreSQL,
       label: "PostgreSQL",
     },
     {
-      id: 12,
+      id: 13,
       icon: Git,
       label: "Git",
     },
@@ -99,7 +99,7 @@ const Skills = ({ id }: Props) => {
             key={item.id}
           >
             <Image
-              className="2xl:w-[6dvw] 2xl:h-[6dvh] xl:w-[8dvw] xl:h-[8dvh] lg:w-[8dvw] lg:h-auto md:w-[10vw] md:h-auto w-[14dvw] h-auto"
+              className="2xl:w-[6dvw] 2xl:h-[6dvh] xl:w-[8dvw] xl:h-[8dvh] lg:w-[8dvw] lg:h-[8dvh] md:w-[10vw] md:h-[10dvh] w-[14dvw] h-[14dvh]"
               src={item.icon}
               alt={item.label}
             />
