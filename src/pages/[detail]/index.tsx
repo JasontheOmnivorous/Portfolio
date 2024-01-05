@@ -106,7 +106,7 @@ const ProjectDetailPage = () => {
   );
 
   return (
-    <div className="w-screen h-auto flex flex-col justify-start items-start m-5">
+    <div className="w-[100%] h-[100%] flex flex-col justify-center items-start m-5 flex-wrap">
       <h1 className="text-orange-500 font-bold m-2">{selectedProject?.name}</h1>
       {selectedProject?.apiDocs && (
         <a
@@ -133,14 +133,14 @@ const ProjectDetailPage = () => {
       )}
       {selectedProject?.image && (
         <Image
-          className="lg:w-[90%] lg:h-auto w-60 h-auto mb-5 mt-5 rounded-xl shadow-xl"
+          className="lg:w-[90%] lg:h-auto md:w-[90%] md:h-auto w-[90%] h-auto mb-5 mt-5 rounded-xl shadow-xl"
           src={selectedProject.image}
           alt="app-image"
         />
       )}
       <h1 className="font-bold m-2">Description:</h1>
       <p className="m-2 flex flex-wrap">{selectedProject?.description}</p>
-      <div className="flex flex-col justify-center items-start flex-wrap font-bold m-2">
+      <div className="flex flex-col justify-center items-start flex-wrap font-bold m-2 2xl:flex-row 2xl:justify-center 2xl:items-center">
         Technologies used:
         {selectedProject?.technologiesUsed.map((item) => (
           <div

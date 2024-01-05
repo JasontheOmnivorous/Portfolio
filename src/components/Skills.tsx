@@ -1,15 +1,16 @@
-import ExpressJS from "@/assets/expressjs.svg";
-import Git from "@/assets/git.svg";
-import JavaScript from "@/assets/javascript.gif";
-import MaterialUI from "@/assets/material-ui.svg";
-import MongoDB from "@/assets/mongodb.svg";
-import NextJS from "@/assets/nextjs.svg";
-import PostgreSQL from "@/assets/postgresql.svg";
-import Prisma from "@/assets/prisma.svg";
-import ReactJS from "@/assets/react.svg";
-import RTK from "@/assets/redux-toolkit-redux.svg";
-import TailwindCSS from "@/assets/tailwindcss.svg";
-import TypeScript from "@/assets/typescript.svg";
+import ExpressJS from "@/assets/techIcons/expressjs.svg";
+import Git from "@/assets/techIcons/git.svg";
+import JavaScript from "@/assets/techIcons/javascript.gif";
+import MaterialUI from "@/assets/techIcons/material-ui.svg";
+import MongoDB from "@/assets/techIcons/mongodb.svg";
+import NextJS from "@/assets/techIcons/nextjs.svg";
+import NodeJS from "@/assets/techIcons/nodejs.svg";
+import PostgreSQL from "@/assets/techIcons/postgresql.svg";
+import Prisma from "@/assets/techIcons/prisma.svg";
+import ReactJS from "@/assets/techIcons/react.svg";
+import RTK from "@/assets/techIcons/redux-toolkit-redux.svg";
+import TailwindCSS from "@/assets/techIcons/tailwindcss.svg";
+import TypeScript from "@/assets/techIcons/typescript.svg";
 import { TechStack } from "@/types/types";
 import Image from "next/image";
 
@@ -51,6 +52,11 @@ const Skills = ({ id }: Props) => {
     },
     {
       id: 7,
+      icon: NodeJS,
+      label: "Node.js",
+    },
+    {
+      id: 7,
       icon: ExpressJS,
       label: "Express",
     },
@@ -89,10 +95,14 @@ const Skills = ({ id }: Props) => {
       <div className="flex justify-center items-center flex-wrap">
         {techStacks.map((item) => (
           <div
-            className="border border-gray-300 shadow-lg rounded-xl w-[32dvw] h-[16dvh] flex flex-col justify-center items-center m-2 p-2 hover:border-orange-300 lg:w-[16dvw]"
+            className="border border-gray-300 shadow-lg rounded-xl w-[32dvw] h-[16dvh] flex flex-col justify-center items-center m-2 p-2 hover:border-orange-300 lg:w-[16dvw] 2xl:w-[12vw] 2xl:h-[12vh] sm:w-[16dvw]"
             key={item.id}
           >
-            <Image width={50} height={50} src={item.icon} alt={item.label} />
+            <Image
+              className="2xl:w-[6dvw] 2xl:h-[6dvh] xl:w-[8dvw] xl:h-[8dvh] lg:w-[8dvw] lg:h-auto md:w-[10vw] md:h-auto w-[14dvw] h-auto"
+              src={item.icon}
+              alt={item.label}
+            />
             <h1 className="font-bold text-xs m-1">{item.label}</h1>
           </div>
         ))}
